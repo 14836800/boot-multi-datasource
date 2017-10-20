@@ -2,7 +2,6 @@ package com.example.demo;
 
 import com.example.demo.service.TestService;
 import org.springframework.boot.CommandLineRunner;
-import com.sun.javaws.exceptions.ExitException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,11 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication implements CommandLineRunner{
 
 	@Autowired
-	private TestService helloWorldService;
+	private TestService testService;
 
 	@Override
 	public void run(String... args) {
-		System.out.println(this.helloWorldService.getHelloMessage());
+		System.out.println(this.testService.getHelloMessage());
 	}
 
 	public static void main(String[] args) {
