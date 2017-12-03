@@ -29,6 +29,7 @@ public class TestService {
         other.setId(2);
         other = otherRepository.save(other);
 
+        test = testRepository.findOne(1);
         return "Hello " + this.name + " : test's value = " + test.getId() + " , other's value = " + other.getId();
 
     }

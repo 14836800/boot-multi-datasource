@@ -24,7 +24,7 @@ import javax.sql.DataSource;
         entityManagerFactoryRef = "entityManagerFactory",
         basePackages = {"com.example.demo.test.data"}
 )
-public class testDataConfig {
+public class TestDataConfig {
 
     @Autowired
     private JpaProperties jpaProperties;

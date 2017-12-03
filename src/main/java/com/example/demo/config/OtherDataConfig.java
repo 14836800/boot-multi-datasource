@@ -24,7 +24,7 @@ import javax.sql.DataSource;
         transactionManagerRef = "otherTransactionManager",
         basePackages = {"com.example.demo.other.data"}
 )
-public class otherDataConfig {
+public class OtherDataConfig {
 
     @Autowired
     private JpaProperties jpaProperties;
